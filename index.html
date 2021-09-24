@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
 
@@ -43,21 +43,21 @@
         <div class="header__right">
           <nav class="header__menu">
             <ul class="header__main-menu">
-              <li class="active sub-wrapper"><a href="" class="sub-btn">Home</a>
-                <ul class="header__sub-menu nav">
-                  <li><a href="" data-i18n="nav.test1"></a></li>
-                  <li><a href="" data-i18n="nav.test2"></a></li>
-                  <li><a href="" data-i18n="nav.test3"></a></li>
+              <li class="active sub-wrapper"><a href="" class="sub-btn" data-i18n="header.home"></a>
+                <ul class="header__sub-menu ">
+                  <li><a href="" data-i18n="header.test1">Text1</a></li>
+                  <li><a href="" data-i18n="header.test2">Text2</a></li>
+                  <li><a href="" data-i18n="header.test3">Text3</a></li>
                 </ul>
               </li>
-              <li><a href="" data-i18n="blog">Blog</a></li>
-              <li><a href="">FAQ</a></li>
-              <li><a href="">Security</a></li>
+              <li><a href="" data-i18n="header.blog">Blog</a></li>
+              <li><a href="" data-i18n="header.faq">FAQ</a></li>
+              <li><a href="" data-i18n="header.security">Security</a></li>
             </ul>
           </nav>
           <div class="header__connect">
-            <button class="btn-table login">Log In</button>
-            <button class="btn-table blue-btn">Sign Up</button>
+            <button class="btn-table login" data-i18n="header.login">Log In</button>
+            <button class="btn-table blue-btn" data-i18n="header.singup">Sign Up</button>
           </div>
         </div>
       </div>
@@ -68,10 +68,10 @@
       </div>
       <nav class="mobile__menu">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">FAQ</a></li>
-          <li><a href="">Security</a></li>
+          <li><a href="" data-i18n="header.home"></a></li>
+          <li><a href="" data-i18n="header.blog">Blog</a></li>
+          <li><a href="" data-i18n="header.faq">FAQ</a></li>
+          <li><a href="" data-i18n="header.security">Security</a></li>
         </ul>
       </nav>
     </div>
@@ -83,10 +83,10 @@
       <div class="container">
         <div class="hero__in">
           <div class="hero__left">
-            <h1 class="title-h1">
+            <h1 class="title-h1" data-i18n="hero.title">
               Your gateway into the limitless realm of crypto
             </h1>
-            <p class="notice-title">
+            <p class="notice-title" data-i18n="hero.subtitle">
               Buy, sell, exchange and store digital assets using 8wallet. The future of personal finance is just one
               click away.
             </p>
@@ -96,7 +96,7 @@
                 <div class="item-content">
                   <span class="rating">4.6</span>
                   <span class="star"><img src="img/icons/star.svg" alt=""></span>
-                  <span class="views">78 reviews</span>
+                  <span class="views" data-i18n="hero.rev1">78 reviews</span>
                 </div>
               </div>
               <div class="hero__get-item">
@@ -104,7 +104,7 @@
                 <div class="item-content">
                   <span class="rating">4.6</span>
                   <span class="star"><img src="img/icons/star.svg" alt=""></span>
-                  <span class="views">78 reviews</span>
+                  <span class="views" data-i18n="hero.rev2">78 reviews</span>
                 </div>
               </div>
             </div>
@@ -129,8 +129,8 @@
                 <div class="value">$44, 490.80</div>
                 <div class="profit">+6.82%</div>
                 <div class="graph"><img src="img/graph.png" alt=""></div>
-                <div class=buttons-invest><button class="btn-table buy">Buy with Card</button></div>
-                <div class=buttons-invest> <button class="btn-table deposit">Deposit Crypto</button></div>
+                <div class=buttons-invest><button class="btn-table buy" data-i18n="assets.buy">Buy with Card</button></div>
+                <div class=buttons-invest> <button class="btn-table deposit" data-i18n="assets.deposit">Deposit Crypto</button></div>
               </div>
               <div class="table__item">
                 <div class="icon"><img src="img/icons/bitcoin.svg" alt=""></div>
@@ -139,8 +139,8 @@
                 <div class="value">$44, 490.80</div>
                 <div class="profit red">+6.82%</div>
                 <div class="graph"><img src="img/graph.png" alt=""></div>
-                <div class=buttons-invest><button class="btn-table buy">Buy with Card</button></div>
-                <div class=buttons-invest> <button class="btn-table deposit">Deposit Crypto</button></div>
+                <div class=buttons-invest><button class="btn-table buy" data-i18n="assets.buy">Buy with Card</button></div>
+                <div class=buttons-invest> <button class="btn-table deposit" data-i18n="assets.deposit">Deposit Crypto</button></div>
               </div>
               <div class="table__item">
                 <div class="icon"><img src="img/icons/bitcoin.svg" alt=""></div>
@@ -149,15 +149,15 @@
                 <div class="value">$44, 490.80</div>
                 <div class="profit">+6.82%</div>
                 <div class="graph"><img src="img/graph.png" alt=""></div>
-                <div class=buttons-invest><button class="btn-table buy">Buy with Card</button></div>
-                <div class=buttons-invest> <button class="btn-table deposit">Deposit Crypto</button></div>
+                <div class=buttons-invest><button class="btn-table buy" data-i18n="assets.buy">Buy with Card</button></div>
+                <div class=buttons-invest> <button class="btn-table deposit" data-i18n="assets.deposit">Deposit Crypto</button></div>
               </div>
 
             </div>
           </div>
         </div>
         <div class="assets__more">
-          <a href="" class="more-link"><span>View more assets</span><svg width="8" height="14" viewBox="0 0 8 14"
+          <a href="" class="more-link"><span data-i18n="assets.vievmore">View more assets</span><svg width="8" height="14" viewBox="0 0 8 14"
               fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M5.17168 7.00023L0.22168 2.05023L1.63568 0.63623L7.99968 7.00023L1.63568 13.3642L0.22168 11.9502L5.17168 7.00023Z"
@@ -180,7 +180,7 @@
                 d="M12.2197 19.0577H43.0002C44.1048 19.0577 45.0002 19.9532 45.0002 21.0577V38C45.0002 39.1046 44.1048 40 43.0002 40H21.8685C20.7639 40 19.8685 39.1046 19.8685 38V34.3426M12.2197 19.0577L16.454 23.1154M12.2197 19.0577L16.454 15"
                 stroke="#3139CE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-            All-in-one Crypto Portfolio
+            <span data-i18n="whyit.title1">All-in-one Crypto Portfolio</span>
           </div>
           <div class="whyit__item">
             <svg width="48" height="34" viewBox="0 0 48 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -189,7 +189,7 @@
                 stroke="#3139CE" stroke-width="2" />
               <rect x="1.91699" y="1.625" width="44.1667" height="30.75" rx="3" stroke="#3139CE" stroke-width="2" />
             </svg>
-            Reliable Payment Gateway
+            <span data-i18n="whyit.title2">Reliable Payment Gateway</span>
           </div>
           <div class="whyit__item">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -204,24 +204,23 @@
               <circle cx="24" cy="24" r="1.5" fill="#3139CE" />
               <rect x="23" y="23.5" width="2" height="4" rx="1" fill="#3139CE" />
             </svg>
-            Private & Secure
+            <span data-i18n="whyit.title3">Private & Secure</span>
           </div>
         </div>
       </div>
     </section>
 
 
-    <section class="allcrypto">
+    <section class="allcrypto allcryptohome">
       <div class="container">
         <div class="allcrypto__in">
           <div class="block-title">
-            <h2 class="title-h2">
+            <h2 class="title-h2" data-i18n="allcryptohome.title">
               All the cryptocurrencies you need. <br>
               And even more
             </h2>
-            <p class="title-hint">
-              8wallet supports all major cryptocurrencies. New currencies are added regularly, discover them all in the
-              list below.
+            <p class="title-hint" data-i18n="allcryptohome.subtitle">
+              8wallet supports all major cryptocurrencies. New currencies are added regularly, discover them all in the list below.
             </p>
           </div>
           <div class="allcrypto__line">
@@ -300,24 +299,24 @@
               <span class="title">BTC</span>
               <span class="text">Bitcoin</span>
             </a>
-            <a href="" class="others-crypto">And many others</a>
+            <a href="" class="others-crypto" data-i18n="allcryptohome.others">And many others</a>
           </div>
           <div class="allcrypto__buttons">
-            <button class="btn-table buy btn-see">See all</button>
+            <button class="btn-table buy btn-see" data-i18n="allcryptohome.seeall">See all</button>
           </div>
         </div>
       </div>
     </section>
-    <section class="multi">
+
+    <section class="multi multihome">
       <div class="container">
         <div class="multi__in">
           <div class="block-title">
-            <h2 class="title-h2">
+            <h2 class="title-h2" data-i18n="multihome.title">
               Multi-Currency Payment Gateways
             </h2>
-            <p class="title-hint">
-              Explore available deposit and withdrawal methods and choose what suits you best: wire transfers, credit
-              and debit cards or cryptocurrency.
+            <p class="title-hint" data-i18n="multihome.subtitle">
+              Explore available deposit and withdrawal methods and choose what suits you best: wire transfers, credit and debit cards or cryptocurrency.
             </p>
           </div>
           <div class="multi__line">
@@ -327,12 +326,11 @@
                   autoplay></lottie-player>
               </div>
               <div class="multi__item-content">
-                <h4 class="title-small">
+                <h4 class="title-small" data-i18n="multihome.titlesmal1">
                   Credit & debit cards
                 </h4>
-                <p class="text">
-                  All fiat payments made with Visa/Mastercard are processed through 8wallet’s secure and compliant
-                  payment gateway, ensuring seamless experience and instant crypto purchase.
+                <p class="text" data-i18n="multihome.text1">
+                  All fiat payments made with Visa/Mastercard are processed through 8wallet’s secure and compliant payment gateway, ensuring seamless experience and instant crypto purchase.
                 </p>
               </div>
             </div>
@@ -342,12 +340,11 @@
                   autoplay></lottie-player>
               </div>
               <div class="multi__item-content">
-                <h4 class="title-small">
+                <h4 class="title-small" data-i18n="multihome.titlesmal2">
                   Wire transfer (SEPA)
                 </h4>
-                <p class="text">
-                  Our cutting-edge technology provides a compliant gateway for standartized payment transactions in
-                  Europe, making money transfers easier and more transparent.
+                <p class="text" data-i18n="multihome.text2">
+                  Our cutting-edge technology provides a compliant gateway for standartized payment transactions in Europe, making money transfers easier and more transparent.
                 </p>
               </div>
             </div>
@@ -362,18 +359,18 @@
       <div class="container">
         <div class="started__in">
           <div class="block-title">
-            <h2 class="title-h2">
+            <h2 class="title-h2" data-i18n="started.title">
               Get started with crypto in just 3 minutes
             </h2>
           </div>
         </div>
         <div class="started__line">
           <div class="started__nav">
-            <a href="" class="tab active">Buy with Card</a>
-            <a href="" class="tab">Buy with Card</a>
-            <a href="" class="tab">Buy with Card</a>
-            <a href="" class="tab">Buy with Card</a>
-            <a href="" class="tab">Buy with Card</a>
+            <a href="" class="tab active" data-i18n="started.tab1">Buy with Card</a>
+            <a href="" class="tab" data-i18n="started.tab2">Buy with Card</a>
+            <a href="" class="tab" data-i18n="started.tab3">Buy with Card</a>
+            <a href="" class="tab" data-i18n="started.tab4">Buy with Card</a>
+            <a href="" class="tab" data-i18n="started.tab5">Buy with Card</a>
           </div>
           <div class="started__box active">
             <div class="started__left">
@@ -383,20 +380,19 @@
               </button>
             </div>
             <div class="started__right">
-              <h4 class="title-small">
-                How Asset Tokenization Can
-                Help Business Entrepreneurs 1
+              <h4 class="title-small" data-i18n="started.tab1title">
+                How Asset Tokenization Can Help Business Entrepreneurs 1
               </h4>
-              <p class="text">
+              <p class="text" data-i18n="started.tab1text">
                 Digital currencies made a lot of buzz in the past 10 years.
-                In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of
-                coins have appeared. But despite the significant figures for market cap, the actual impact on the
+                In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the
                 economy has not yet been felt.
               </p>
-              <button class="btn-table buy">Buy with Card</button>
+              <button class="btn-table buy" data-i18n="started.buy">Buy with Card</button>
             </div>
           </div>
-          <div class="started__box">
+
+          <div class="started__box ">
             <div class="started__left">
               <video src="video/wallet-video.mp4"></video>
               <button class="play-btn">
@@ -404,20 +400,19 @@
               </button>
             </div>
             <div class="started__right">
-              <h4 class="title-small">
-                How Asset Tokenization Can
-                Help Business Entrepreneurs 2
+              <h4 class="title-small" data-i18n="started.tab2title">
+                How Asset Tokenization Can Help Business Entrepreneurs 1
               </h4>
-              <p class="text">
+              <p class="text" data-i18n="started.tab2text">
                 Digital currencies made a lot of buzz in the past 10 years.
-                In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of
-                coins have appeared. But despite the significant figures for market cap, the actual impact on the
+                In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the
                 economy has not yet been felt.
               </p>
-              <button class="btn-table buy">Buy with Card</button>
+              <button class="btn-table buy" data-i18n="started.buy">Buy with Card</button>
             </div>
           </div>
-          <div class="started__box">
+
+          <div class="started__box ">
             <div class="started__left">
               <video src="video/wallet-video.mp4"></video>
               <button class="play-btn">
@@ -425,20 +420,19 @@
               </button>
             </div>
             <div class="started__right">
-              <h4 class="title-small">
-                How Asset Tokenization Can
-                Help Business Entrepreneurs 3
+              <h4 class="title-small" data-i18n="started.tab3title">
+                How Asset Tokenization Can Help Business Entrepreneurs 1
               </h4>
-              <p class="text">
+              <p class="text" data-i18n="started.tab3text">
                 Digital currencies made a lot of buzz in the past 10 years.
-                In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of
-                coins have appeared. But despite the significant figures for market cap, the actual impact on the
+                In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the
                 economy has not yet been felt.
               </p>
-              <button class="btn-table buy">Buy with Card</button>
+              <button class="btn-table buy" data-i18n="started.buy">Buy with Card</button>
             </div>
           </div>
-          <div class="started__box">
+
+          <div class="started__box ">
             <div class="started__left">
               <video src="video/wallet-video.mp4"></video>
               <button class="play-btn">
@@ -446,20 +440,19 @@
               </button>
             </div>
             <div class="started__right">
-              <h4 class="title-small">
-                How Asset Tokenization Can
-                Help Business Entrepreneurs 4
+              <h4 class="title-small" data-i18n="started.tab4title">
+                How Asset Tokenization Can Help Business Entrepreneurs 1
               </h4>
-              <p class="text">
+              <p class="text" data-i18n="started.tab4text">
                 Digital currencies made a lot of buzz in the past 10 years.
-                In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of
-                coins have appeared. But despite the significant figures for market cap, the actual impact on the
+                In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the
                 economy has not yet been felt.
               </p>
-              <button class="btn-table buy">Buy with Card</button>
+              <button class="btn-table buy" data-i18n="started.buy">Buy with Card</button>
             </div>
           </div>
-          <div class="started__box">
+
+          <div class="started__box ">
             <div class="started__left">
               <video src="video/wallet-video.mp4"></video>
               <button class="play-btn">
@@ -467,19 +460,19 @@
               </button>
             </div>
             <div class="started__right">
-              <h4 class="title-small">
-                How Asset Tokenization Can
-                Help Business Entrepreneurs 5
+              <h4 class="title-small" data-i18n="started.tab5title">
+                How Asset Tokenization Can Help Business Entrepreneurs 1
               </h4>
-              <p class="text">
+              <p class="text" data-i18n="started.tab5text">
                 Digital currencies made a lot of buzz in the past 10 years.
-                In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of
-                coins have appeared. But despite the significant figures for market cap, the actual impact on the
+                In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the
                 economy has not yet been felt.
               </p>
-              <button class="btn-table buy">Buy with Card</button>
+              <button class="btn-table buy" data-i18n="started.buy">Buy with Card</button>
             </div>
           </div>
+
+          
         </div>
       </div>
     </section>
@@ -490,13 +483,13 @@
         <div class="blog__in">
           <div class="blog__top">
             <div class="block-title">
-              <h2 class="title-h2">
+              <h2 class="title-h2" data-i18n="blog.blog">
                 Blog
               </h2>
             </div>
             <div class="blog__top-right">
               <div class="blog__btn">
-                <button class="btn-table buy">See all news</button>
+                <button class="btn-table buy" data-i18n="blog.seeallnews">See all news</button>
               </div>
               <div class="slider-controls">
                 <button class="arrow-btn prev-btn prev__blog"><img src="img/prev-arrow.svg" alt=""></button>
@@ -511,18 +504,14 @@
                   <img src="img/blog-img.png" alt="">
                 </div>
                 <div class="content">
-                  <div class="date">
+                  <div class="date" data-i18n="blog.post1data">
                     12 Oct 2021
                   </div>
-                  <a href="" class="title-small">
-                    How Asset Tokenization Can
-                    Help Business Entrepreneurs
+                  <a href="" class="title-small" data-i18n="blog.post1title">
+                    How Asset Tokenization Can Help Business Entrepreneurs
                   </a>
-                  <p class="text">
-                    Digital currencies made a lot of buzz in the past 10 years.
-                    In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds
-                    of coins have appeared. But despite the significant figures for market cap, the actual impact on the
-                    economy has not yet been felt.
+                  <p class="text" data-i18n="blog.post1text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe nostrum distinctio numquam itaque pariatur ex, error totam atque unde optio deleniti repudiandae accusamus id. Mollitia corporis sapiente odit? Enim?
                   </p>
                   <div class="author">
                     <div class="author__left">
@@ -531,10 +520,10 @@
                       </div>
                     </div>
                     <div class="author__right">
-                      <h5 class="name">
+                      <h5 class="name" data-i18n="blog.post1autor">
                         Daniel Frost
                       </h5>
-                      <p class="position">
+                      <p class="position" data-i18n="blog.post1position">
                         Сryptocurrency expert
                       </p>
                     </div>
@@ -546,14 +535,14 @@
                   <img src="img/blog-img.png" alt="">
                 </div>
                 <div class="content">
-                  <div class="date">
+                  <div class="date" data-i18n="blog.post2data">
                     12 Oct 2021
                   </div>
-                  <a href="" class="title-small">
+                  <a href="" class="title-small" data-i18n="blog.post2title">
                     How Asset Tokenization Can
                     Help Business Entrepreneurs
                   </a>
-                  <p class="text">
+                  <p class="text" data-i18n="blog.post2text">
                     Digital currencies made a lot of buzz in the past 10 years.
                     In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds
                     of coins have appeared. But despite the significant figures for market cap, the actual impact on the
@@ -566,10 +555,10 @@
                       </div>
                     </div>
                     <div class="author__right">
-                      <h5 class="name">
+                      <h5 class="name" data-i18n="blog.post2autor">
                         Daniel Frost
                       </h5>
-                      <p class="position">
+                      <p class="position" data-i18n="blog.post2position">
                         Сryptocurrency expert
                       </p>
                     </div>
@@ -582,8 +571,8 @@
             <div class="blog__preview-item">
               <a href="" class="img">
                 <img src="img/blog-img.png" alt="">
-                <span class="date">12 Oct 2021</span>
-                <span class="title">Lacerat tristique orci ornare tortor diam. Vitae faucibus sed odio fringilla
+                <span class="date" data-i18n="blog.smalpost1data">12 Oct 2021</span>
+                <span class="title" data-i18n="blog.smalpost1title">Lacerat tristique orci ornare tortor diam. Vitae faucibus sed odio fringilla
                   facilis...</span>
               </a>
               <div class="author">
@@ -593,20 +582,21 @@
                   </div>
                 </div>
                 <div class="author__right">
-                  <h5 class="name">
+                  <h5 class="name" data-i18n="blog.smalpost1autor">
                     Daniel Frost
                   </h5>
-                  <p class="position">
+                  <p class="position" data-i18n="blog.smalpost1position">
                     Сryptocurrency expert
                   </p>
                 </div>
               </div>
             </div>
+
             <div class="blog__preview-item">
               <a href="" class="img">
                 <img src="img/blog-img.png" alt="">
-                <span class="date">12 Oct 2021</span>
-                <span class="title">Lacerat tristique orci ornare tortor diam. Vitae faucibus sed odio fringilla
+                <span class="date" data-i18n="blog.smalpost2data">12 Oct 2021</span>
+                <span class="title" data-i18n="blog.smalpost2title">Lacerat tristique orci ornare tortor diam. Vitae faucibus sed odio fringilla
                   facilis...</span>
               </a>
               <div class="author">
@@ -616,20 +606,21 @@
                   </div>
                 </div>
                 <div class="author__right">
-                  <h5 class="name">
+                  <h5 class="name" data-i18n="blog.smalpost2autor">
                     Daniel Frost
                   </h5>
-                  <p class="position">
+                  <p class="position" data-i18n="blog.smalpost2position">
                     Сryptocurrency expert
                   </p>
                 </div>
               </div>
             </div>
+
             <div class="blog__preview-item">
               <a href="" class="img">
                 <img src="img/blog-img.png" alt="">
-                <span class="date">12 Oct 2021</span>
-                <span class="title">Lacerat tristique orci ornare tortor diam. Vitae faucibus sed odio fringilla
+                <span class="date" data-i18n="blog.smalpost3data">12 Oct 2021</span>
+                <span class="title" data-i18n="blog.smalpost3title">Lacerat tristique orci ornare tortor diam. Vitae faucibus sed odio fringilla
                   facilis...</span>
               </a>
               <div class="author">
@@ -639,15 +630,16 @@
                   </div>
                 </div>
                 <div class="author__right">
-                  <h5 class="name">
+                  <h5 class="name" data-i18n="blog.smalpost3autor">
                     Daniel Frost
                   </h5>
-                  <p class="position">
+                  <p class="position" data-i18n="blog.smalpost3position">
                     Сryptocurrency expert
                   </p>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -659,17 +651,16 @@
         <div class="team__in">
           <div class="team__top">
             <div class="block-title">
-              <h2 class="title-h2">
+              <h2 class="title-h2" data-i18n="team.title">
                 Meet the team
               </h2>
-              <p class="title-hint">
-                We are a team of ambitious entrepreneurs, hackers and rockstar marketers building innovative products
-                together
+              <p class="title-hint" data-i18n="team.subtitle">
+                We are a team of ambitious entrepreneurs, hackers and rockstar marketers building innovative products together
               </p>
             </div>
             <div class="team__top-right">
               <div class="team__btn">
-                <button class="btn-table buy">All team</button>
+                <button class="btn-table buy" data-i18n="team.allteam">All team</button>
               </div>
               <div class="slider-controls">
                 <button class="arrow-btn prev-btn prev__team"><img src="img/prev-arrow.svg" alt=""></button>
@@ -681,62 +672,63 @@
             <div class="team__slider">
               <div class="team__slider-item">
                 <div class="img">
-                  <div class="position-mini">CEO</div>
+                  <div class="position-mini" data-i18n="teambox.position1">CEO</div>
                   <img src="img/team1.jpg" alt="">
                 </div>
-                <h4 class="name">
+                <h4 class="name" data-i18n="teambox.name1">
                   Marvin McKinney
                 </h4>
-                <p class="position">
+                <p class="position" data-i18n="teambox.fullposition1" >
+                  CEO, Сryptocurrency expert
+                </p>
+              </div>
+              
+              <div class="team__slider-item">
+                <div class="img">
+                  <div class="position-mini" data-i18n="teambox.position2">CEO</div>
+                  <img src="img/team2.jpg" alt="">
+                </div>
+                <h4 class="name" data-i18n="teambox.name2">
+                  Marvin McKinney
+                </h4>
+                <p class="position" data-i18n="teambox.fullposition2" >
                   CEO, Сryptocurrency expert
                 </p>
               </div>
               <div class="team__slider-item">
                 <div class="img">
-                  <div class="position-mini">CEO</div>
-                  <img src="img/team2.jpg" alt="">
-                </div>
-                <h4 class="name">
-                  Mark Thompson
-                </h4>
-                <p class="position">
-                  Сryptocurrency expert
-                </p>
-              </div>
-              <div class="team__slider-item">
-                <div class="img">
-                  <div class="position-mini">CEO</div>
+                  <div class="position-mini" data-i18n="teambox.position3">CEO</div>
                   <img src="img/team3.jpg" alt="">
                 </div>
-                <h4 class="name">
-                  Daniel Frost
+                <h4 class="name" data-i18n="teambox.name3">
+                  Marvin McKinney
                 </h4>
-                <p class="position">
-                  Сryptocurrency expert
+                <p class="position" data-i18n="teambox.fullposition3" >
+                  CEO, Сryptocurrency expert
                 </p>
               </div>
               <div class="team__slider-item">
                 <div class="img">
-                  <div class="position-mini">CEO</div>
-                  <img src="img/team4.jpg" alt="">
+                  <div class="position-mini" data-i18n="teambox.position4">CEO</div>
+                  <img src="img/team2.jpg" alt="">
                 </div>
-                <h4 class="name">
-                  Bessie Cooper
+                <h4 class="name" data-i18n="teambox.name4">
+                  Marvin McKinney
                 </h4>
-                <p class="position">
-                  Сryptocurrency expert
+                <p class="position" data-i18n="teambox.fullposition4" >
+                  CEO, Сryptocurrency expert
                 </p>
               </div>
               <div class="team__slider-item">
                 <div class="img">
-                  <div class="position-mini">CEO</div>
-                  <img src="img/team4.jpg" alt="">
+                  <div class="position-mini" data-i18n="teambox.position5">CEO</div>
+                  <img src="img/team1.jpg" alt="">
                 </div>
-                <h4 class="name">
-                  Bessie Cooper
+                <h4 class="name" data-i18n="teambox.name5">
+                  Marvin McKinney
                 </h4>
-                <p class="position">
-                  Сryptocurrency expert
+                <p class="position" data-i18n="teambox.fullposition5" >
+                  CEO, Сryptocurrency expert
                 </p>
               </div>
             </div>
@@ -751,7 +743,7 @@
         <div class="where__in">
           <div class="where__left">
             <div class="block-title">
-              <h2 class="title-h2">
+              <h2 class="title-h2" data-i18n="where.title">
                 Where are we?
               </h2>
             </div>
@@ -823,8 +815,8 @@
                 </div>
               </div>
               <div class="text">
-                <p class="name">Ralph Edwards</p>
-                <p class="position">Community manager</p>
+                <p class="name" data-i18n="contact.name1">Ralph Edwards</p>
+                <p class="position" data-i18n="contact.position1">Community manager</p>
               </div>
             </div>
             <div class="contact__item">
@@ -851,32 +843,32 @@
                 </div>
               </div>
               <div class="text">
-                <p class="name">Arlene McCoy</p>
-                <p class="position">Community manager</p>
+                <p class="name" data-i18n="contact.name2">Arlene McCoy</p>
+                <p class="position" data-i18n="contact.position2">Community manager</p>
               </div>
             </div>
 
           </div>
           <div class="contact__right">
             <div class="block-title">
-              <h2 class="title-h2">
+              <h2 class="title-h2" data-i18n="contact.title">
                 Contact us
               </h2>
-              <p class="title-hint">
+              <p class="title-hint" data-i18n="contact.subtitle">
                 Use this form to reach out to us
               </p>
             </div>
             <form action="" class="contact__form">
               <div class="input-field">
-                <label for="">Enter your email</label>
+                <label for="" data-i18n="contact.email">Enter your email</label>
                 <input class="input-area" type="email" placeholder="Enter your email">
               </div>
               <div class="input-field">
-                <label for="">Message</label>
+                <label for="" data-i18n="contact.message">Message</label>
                 <textarea class="input-area" name="" id="" cols="30" rows="4"
                   placeholder="Enter your message here"></textarea>
               </div>
-              <button class="btn-table buy">Send message</button>
+              <button class="btn-table buy" data-i18n="contact.send">Send message</button>
             </form>
           </div>
         </div>
@@ -888,7 +880,7 @@
       <div class="container">
         <div class="faq__in">
           <div class="block-title">
-            <h2 class="title-h2 " itemprop="name">
+            <h2 class="title-h2 " itemprop="name" data-i18n="faq.title">
               Popular Questions
             </h2>
           </div>
@@ -905,7 +897,7 @@
                       fill="#3139CE" />
                   </svg>
                   <div itemscope="" itemprop="mainEntity"  itemtype="https://schema.org/Question">
-                    <div itemprop="name">Liquidity</div>
+                    <div itemprop="name" data-i18n="faq.ques1title">Liquidity</div>
                   </div>
                 </h2>
                 <div class="faqBox_header_openIcon"></div>
@@ -913,18 +905,8 @@
               <div class="faqBox_body">
                 <div class="descr" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div itemprop="text">
-                    <p>
-                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount
-                      of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared.
-                      But
-                      despite the significant figures for market cap, the actual impact on.</p>
-                  </div>
+                    <p data-i18n="faq.ans1title">
+                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on.</p> </div>
                 </div>
 
               </div>
@@ -941,7 +923,7 @@
                       fill="#3139CE" />
                   </svg>
                   <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <div itemprop="name"> Status migration</div>
+                    <div itemprop="name" data-i18n="faq.ques2title"> Status migration</div>
                   </div>
 
                 </h2>
@@ -950,18 +932,8 @@
               <div class="faqBox_body">
                 <div class="descr" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div itemprop="text">
-                    <p>
-                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount
-                      of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared.
-                      But
-                      despite the significant figures for market cap, the actual impact on.</p>
-                  </div>
+                    <p data-i18n="faq.ans2title">
+                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on.</p> </div>
                 </div>
 
               </div>
@@ -988,7 +960,7 @@
                       fill="white" stroke="#3139CE" stroke-width="2" />
                   </svg>
                   <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <div itemprop="name"> Team</div>
+                    <div itemprop="name" data-i18n="faq.ques3title"> Team</div>
                   </div>
                 </h2>
                 <div class="faqBox_header_openIcon"></div>
@@ -996,18 +968,8 @@
               <div class="faqBox_body">
                 <div class="descr" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div itemprop="text">
-                    <p>
-                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount
-                      of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared.
-                      But
-                      despite the significant figures for market cap, the actual impact on.</p>
-                  </div>
+                    <p data-i18n="faq.ans3title">
+                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on.</p> </div>
                 </div>
 
               </div>
@@ -1040,7 +1002,7 @@
                     <circle cx="38.5" cy="34.5714" r="2.5" fill="white" stroke="#3139CE" stroke-width="2" />
                   </svg>
                   <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <div itemprop="name">Roadmap</div>
+                    <div itemprop="name" data-i18n="faq.ques4title">Roadmap</div>
                   </div>
                 </h2>
                 <div class="faqBox_header_openIcon"></div>
@@ -1048,18 +1010,8 @@
               <div class="faqBox_body">
                 <div class="descr" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div itemprop="text">
-                    <p>
-                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount
-                      of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared.
-                      But
-                      despite the significant figures for market cap, the actual impact on.</p>
-                  </div>
+                    <p data-i18n="faq.ans4title">
+                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on.</p> </div>
                 </div>
 
               </div>
@@ -1081,7 +1033,7 @@
                       fill="white" stroke="#3139CE" stroke-width="2" stroke-linejoin="round" />
                   </svg>
                   <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <div itemprop="name">Legal</div>
+                    <div itemprop="name" data-i18n="faq.ques5title">Legal</div>
                   </div>
                 </h2>
                 <div class="faqBox_header_openIcon"></div>
@@ -1089,18 +1041,8 @@
               <div class="faqBox_body">
                 <div class="descr" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div itemprop="text">
-                    <p>
-                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount
-                      of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared.
-                      But
-                      despite the significant figures for market cap, the actual impact on.</p>
-                  </div>
+                    <p data-i18n="faq.ans5title">
+                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on.</p> </div>
                 </div>
 
               </div>
@@ -1120,7 +1062,7 @@
                       fill="#3139CE" />
                   </svg>
                   <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <div itemprop="name">Security</div>
+                    <div itemprop="name" data-i18n="faq.ques6title">Security</div>
                   </div>
                 </h2>
                 <div class="faqBox_header_openIcon"></div>
@@ -1128,18 +1070,8 @@
               <div class="faqBox_body">
                 <div class="descr" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div itemprop="text">
-                    <p>
-                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount
-                      of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared.
-                      But
-                      despite the significant figures for market cap, the actual impact on.</p>
-                  </div>
+                    <p data-i18n="faq.ans6title">
+                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on.</p> </div>
                 </div>
 
               </div>
@@ -1156,13 +1088,13 @@
         <div class="explore__in">
           <div class="explore__left">
             <div class="block-title">
-              <h2 class="title-h2 white">
+              <h2 class="title-h2 white" data-i18n="explore.title">
                 Explore the brave new world of digital finance!
               </h2>
-              <p class="title-hint gray">
+              <p class="title-hint gray" data-i18n="explore.subtitle">
                 Download 8wallet app or set up an account right now!
               </p>
-              <button class="btn-table deposit">Get Started</button>
+              <button class="btn-table deposit" data-i18n="explore.getstarted">Get Started</button>
             </div>
           </div>
         </div>
@@ -1181,7 +1113,7 @@
             </a>
           </div>
           <div class="footer__lang">
-            <h4>Language</h4>
+            <h4  data-i18n="footer.lang">Language</h4>
             <div class="language-switcher">
               <div class="boxLang">
                 <ul class="langUlController">
@@ -1199,64 +1131,57 @@
                       </div>
                       <p class="titleLang">Русский</p>
                     </a></li>
-                  <li class="liLang" data-value="it">
-                    <a>
-                      <div class="iconLang">
-                        <img src="img/enlang.png" alt="">
-                      </div>
-                      <p class="titleLang">italy</p>
-                    </a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
         <div class="footer__nav">
-          <h4 class="title-mini">Products</h4>
+          <h4 class="title-mini" data-i18n="footerProdyctNav.title">Products</h4>
           <nav>
             <ul>
-              <li><a href="">Wallet</a></li>
-              <li><a href="">Buy Crypto</a></li>
-              <li><a href="">Crypto Widget</a></li>
-              <li><a href="">API</a></li>
-              <li><a href="">Affiliate Program</a></li>
+              <li><a href=""  data-i18n="footerProdyctNav.el1">Wallet</a></li>
+              <li><a href=""  data-i18n="footerProdyctNav.el2">Buy Crypto</a></li>
+              <li><a href=""  data-i18n="footerProdyctNav.el3">Crypto Widget</a></li>
+              <li><a href=""  data-i18n="footerProdyctNav.el4">API</a></li>
+              <li><a href=""  data-i18n="footerProdyctNav.el5">Affiliate Program</a></li>
             </ul>
           </nav>
         </div>
         <div class="footer__nav">
-          <h4 class="title-mini">Policy</h4>
+          <h4 class="title-mini" data-i18n="footerPolicyNav.title">Policy</h4>
           <nav>
             <ul>
-              <li><a href="">Terms of Service</a></li>
-              <li><a href="">Privacy Policy</a></li>
-              <li><a href="">AML/KYC Policy</a></li>
-              <li><a href="">Refund Policy</a></li>
-              <li><a href="">Cookie Policy</a></li>
+              <li><a href="" data-i18n="footerPolicyNav.el1">Terms of Service</a></li>
+              <li><a href="" data-i18n="footerPolicyNav.el2">Privacy Policy</a></li>
+              <li><a href="" data-i18n="footerPolicyNav.el3">AML/KYC Policy</a></li>
+              <li><a href="" data-i18n="footerPolicyNav.el4">Refund Policy</a></li>
+              <li><a href="" data-i18n="footerPolicyNav.el5">Cookie Policy</a></li>
             </ul>
           </nav>
         </div>
         <div class="footer__nav">
-          <h4 class="title-mini">Information Center</h4>
+          <h4 class="title-mini" data-i18n="footerNav.title">Information Center</h4>
           <nav>
             <ul>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Crypto Academy</a></li>
-              <li><a href="">FAQ</a></li>
+              <li><a href="" data-i18n="footerNav.blog">Blog</a></li>
+              <li><a href="" data-i18n="footerNav.academy">Crypto Academy</a></li>
+              <li><a href="" data-i18n="footerNav.faq">FAQ</a></li>
             </ul>
           </nav>
         </div>
         <div class="footer__nav">
-          <h4 class="title-mini">24/7 Support</h4>
+          <h4 class="title-mini" data-i18n="footerNav.suport">24/7 Support</h4>
           <nav>
             <ul>
-              <li><a href="">Telegram</a></li>
-              <li><a href="">Zendesk</a></li>
-              <li><a href="">Email</a></li>
+              <li><a href="" data-i18n="footerNav.telegram">Telegram</a></li>
+              <li><a href="" data-i18n="footerNav.zen">Zendesk</a></li>
+              <li><a href="" data-i18n="footerNav.emain">Email</a></li>
             </ul>
           </nav>
         </div>
         <div class="footer__nav">
-          <h4 class="title-mini">Follow Us</h4>
+          <h4 class="title-mini" data-i18n="footerNav.folowus">Follow Us</h4>
           <nav class="social__footer-nav">
             <ul>
               <li><a href=""><svg width="38" height="38" viewBox="0 0 38 38" fill="none"
@@ -1291,16 +1216,10 @@
     <div class="footer__bottom">
       <div class="container-big">
         <div class="footer__bottom-in">
-          <div class="footer__copy">
-            Our Site, 8wallet.com, is owned and operated by <em>Eight Holding OÜ</em>, a limited company registered in
-            Estonia
-            under registry code <em>14777241</em> licensed by Politsei- ja Piirivalveamet. License - <em>FVT000000</em>.
-            Providing
-            services of exchanging a virtual currency against a fiat currency. Providing a virtual currency wallet
-            service. Registered address is Harju maakond, Tallinn, Põhja-Tallinna linnaosa, Tööstuse tn 47a-28, 10416
-          </div>
+          <div class="footer__copy" data-i18n="footerBottom.copy">
+            Our Site, 8wallet.com, is owned and operated by <em>Eight Holding OÜ</em>, a limited company registered in Estonia under registry code <em>14777241</em> licensed by Politsei- ja Piirivalveamet. License - <em>FVT000000</em>. Providing services of exchanging a virtual currency against a fiat currency. Providing a virtual currency wallet service. Registered address is Harju maakond, Tallinn, Põhja-Tallinna linnaosa, Tööstuse tn 47a-28, 10416 </div>
           <div class="footer__card">
-            <h5 class="title">
+            <h5 class="title" data-i18n="footerBottom.weAccept">
               We Accept:
             </h5>
             <div class="footer__card-line">
@@ -1317,18 +1236,6 @@
     </div>
   </footer>
 
-
-
-
-<ul class="nav">
-      <li><a href="#" data-i18n="nav.home"></a></li>
-      <li><a href="#" data-i18n="nav.page1"></a></li>
-      <li><a href="#" data-i18n="nav.page2"></a></li>
-    </ul>
-
-    <div class="content">
-      <input data-i18n="[placeholder]input.placeholder; [title]input.placeholder" />
-    </div>
     
 
   <script src="js/scripts.min.js"></script>
@@ -1351,9 +1258,17 @@
       }, () =>{
         jqueryI18next.init(i18next, $);
         $(document.body).localize();
-        setTimeout(() => {
-          i18next.changeLanguage('ru', ()  => $(document.body).localize())
-        }, 5000)
+
+        $('.liLang').on('click',function(){
+          let langSelect = $(this).attr('data-value');
+          if(langSelect == 'ru'){
+             i18next.changeLanguage('ru', ()  => $(document.body).localize())
+          }
+          if(langSelect == 'en'){
+             i18next.changeLanguage('en', ()  => $(document.body).localize())
+          }
+        })
+  
       });
     });
     

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
 
@@ -35,66 +35,76 @@
   <header class="header">
     <div class="container">
       <div class="header__in">
+        <div class="burger-btn">
+          <a href="" class="burger-open"><img src="img/icons/burger-btn.svg" alt=""></a>
+        </div>
         <div class="header__logo"><a href=""><img src="img/logo.svg" alt=""></a></div>
         <div class="header__right">
           <nav class="header__menu">
             <ul class="header__main-menu">
-              <li class="active sub-wrapper"><a href="" class="sub-btn">Home</a>
-                <ul class="header__sub-menu">
-                  <li><a href="">test</a></li>
-                  <li><a href="">test</a></li>
-                  <li><a href="">test</a></li>
+              <li class="active sub-wrapper"><a href="" class="sub-btn" data-i18n="header.home">Home</a>
+                <ul class="header__sub-menu ">
+                  <li><a href="" data-i18n="header.test1">Text1</a></li>
+                  <li><a href="" data-i18n="header.test2">Text2</a></li>
+                  <li><a href="" data-i18n="header.test3">Text3</a></li>
                 </ul>
               </li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">FAQ</a></li>
-              <li><a href="">Security</a></li>
+              <li><a href="" data-i18n="header.blog">Blog</a></li>
+              <li><a href="" data-i18n="header.faq">FAQ</a></li>
+              <li><a href="" data-i18n="header.security">Security</a></li>
             </ul>
           </nav>
           <div class="header__connect">
-            <button class="btn-table login">Log In</button>
-            <button class="btn-table blue-btn">Sign Up</button>
+            <button class="btn-table login" data-i18n="header.login">Log In</button>
+            <button class="btn-table blue-btn" data-i18n="header.singup">Sign Up</button>
           </div>
         </div>
       </div>
     </div>
+    <div class="header__mobile">
+      <div class="close-btn">
+        <a href="" class="burger-close"><img src="img/icons/burger-close.svg" alt=""></a>
+      </div>
+      <nav class="mobile__menu">
+        <ul>
+          <li><a href="" data-i18n="header.home">Home</a></li>
+          <li><a href="" data-i18n="header.blog">Blog</a></li>
+          <li><a href="" data-i18n="header.faq">FAQ</a></li>
+          <li><a href="" data-i18n="header.security">Security</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
 
+
   <main>
-    <section class="hero">
+    <section class="hero heroapi">
       <div class="container">
         <div class="hero__in">
           <div class="hero__left">
-            <h1 class="title-h1">
-                Crypto payments
-                on your website? Solved.
-            </h1>
-            <p class="notice-title">
-                Discover a hassle-free way to start accepting crypto at your online business and increase your clientele.
-            </p>
+            <h1 class="title-h1" data-i18n="heroapi.title">
+                Crypto payments on your website? Solved. </h1>
+            <p class="notice-title" data-i18n="heroapi.subtitle">
+                Discover a hassle-free way to start accepting crypto at your online business and increase your clientele. </p>
             <div class="hero__btn">
                 <button class="btn-table blue-btn">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="12" cy="12" r="12" fill="white"/>
                         <path d="M5.61032 12.2246L8.36918 13.2534L9.44466 16.7136C9.49142 16.9474 9.77198 16.9942 9.95902 16.8539L11.5021 15.5914C11.6424 15.4511 11.8762 15.4511 12.0632 15.5914L14.8221 17.6021C15.0091 17.7423 15.2897 17.6488 15.3364 17.415L17.3939 7.59539C17.4406 7.36159 17.2068 7.12779 16.973 7.22131L5.61032 11.6168C5.32976 11.7103 5.32976 12.1311 5.61032 12.2246ZM9.30439 12.739L14.7285 9.41903C14.8221 9.37227 14.9156 9.51256 14.8221 9.55932L10.3799 13.721C10.2396 13.8612 10.0993 14.0483 10.0993 14.2821L9.95902 15.4043C9.95902 15.5446 9.72522 15.5914 9.67846 15.4043L9.11733 13.3469C8.97705 13.1131 9.07058 12.8325 9.30439 12.739Z" fill="#3139CE"/>
                         </svg>
-                         Contact Manager
+                        <span data-i18n="heroapi.button">Contact Manager</span>
                 </button>
             </div>
           </div>
           <div class="hero__right">
             <div class="hero__line">
                 <div class="hero__line-item">
-                    <h3 class="title">Integrated Wallet API</h3>
-                    <p class="text-line">Diverse Payment Functionality, <br>
-                        Simple & Smooth Setup</p>
-                </div>
+                    <h3 class="title" data-i18n="heroapi.item1title">Integrated Wallet API</h3>
+                    <p class="text-line" data-i18n="heroapi.item1subtitle">Diverse Payment Functionality, <br> Simple & Smooth Setup</p> </div>
                 <div class="hero__line-item">
-                    <h3 class="title">Merchant’s Dashboard</h3>
-                    <p class="text-line">Intuitive Crypto-Fiat Gateway, <br>
-                        No KYC Required</p>
-                </div>
+                    <h3 class="title" data-i18n="heroapi.item2title">Merchant’s Dashboard</h3>
+                    <p class="text-line" data-i18n="heroapi.item2subtitle">Intuitive Crypto-Fiat Gateway, <br> No KYC Required</p> </div>
             </div>
             <div class="hero__btn-right">
               <button class="btn-table blue-btn">
@@ -102,7 +112,7 @@
                       <circle cx="12" cy="12" r="12" fill="white"/>
                       <path d="M5.61032 12.2246L8.36918 13.2534L9.44466 16.7136C9.49142 16.9474 9.77198 16.9942 9.95902 16.8539L11.5021 15.5914C11.6424 15.4511 11.8762 15.4511 12.0632 15.5914L14.8221 17.6021C15.0091 17.7423 15.2897 17.6488 15.3364 17.415L17.3939 7.59539C17.4406 7.36159 17.2068 7.12779 16.973 7.22131L5.61032 11.6168C5.32976 11.7103 5.32976 12.1311 5.61032 12.2246ZM9.30439 12.739L14.7285 9.41903C14.8221 9.37227 14.9156 9.51256 14.8221 9.55932L10.3799 13.721C10.2396 13.8612 10.0993 14.0483 10.0993 14.2821L9.95902 15.4043C9.95902 15.5446 9.72522 15.5914 9.67846 15.4043L9.11733 13.3469C8.97705 13.1131 9.07058 12.8325 9.30439 12.739Z" fill="#3139CE"/>
                       </svg>
-                       Contact Manager
+                       <span data-i18n="heroapi.button">Contact Manager</span>
               </button>
             </div>
           </div>
@@ -114,7 +124,7 @@
     <section class="standart">
         <div class="container">
             <div class="block-title">
-                <h2 class="title-h2">
+                <h2 class="title-h2" data-i18n="standart.title">
                     Bringing the new standard in crypto payments
                 </h2>
               </div>
@@ -123,30 +133,28 @@
                   <div class="standart__line">
                       <div class="standart__item">
                           <div class="img"><img src="img/api/stand1.svg" alt=""></div>
-                          <h4 class="title">Specialty Offer for 
-                            Merchants</h4>
-                          <ul>
-                              <li>Auto-withdrawals to an external wallet</li>
-                              <li><b>0.5% fee on incoming transactions</b></li>
-                              <li>Support for major cryptocurrencies</li>
+                          <h4 class="title" data-i18n="standart.el1title">Specialty Offer for Merchants</h4> <ul>
+                              <li data-i18n="standart.el1li1">Auto-withdrawals to an external wallet</li>
+                              <li data-i18n="standart.el1li2"><b>0.5% fee on incoming transactions</b></li>
+                              <li data-i18n="standart.el1li3">Support for major cryptocurrencies</li>
                             </ul>
                       </div>
                       <div class="standart__item">
                           <div class="img"><img src="img/api/stand2.svg" alt=""></div>
-                          <h4 class="title">State-of-the-Art API</h4>
+                          <h4 class="title" data-i18n="standart.el2title">State-of-the-Art API</h4>
                           <ul>
-                              <li>Simple & fast integration (~48 hours)</li>
-                              <li>Email & Dashboard notifications </li>
-                              <li>Built-in compliance solution</li>
+                              <li data-i18n="standart.el2li1">Simple & fast integration (~48 hours)</li>
+                              <li data-i18n="standart.el2li2">Email & Dashboard notifications </li>
+                              <li data-i18n="standart.el2li3">Built-in compliance solution</li>
                             </ul>
                       </div>
                       <div class="standart__item">
                           <div class="img"><img src="img/api/stand3.svg" alt=""></div>
-                          <h4 class="title">Web UI Dashboard</h4>
+                          <h4 class="title" data-i18n="standart.el3title">Web UI Dashboard</h4>
                           <ul>
-                              <li>Central hub for all crypto operations</li>
-                              <li>Customizable payout methods </li>
-                              <li>Enhanced security options</li>
+                              <li data-i18n="standart.el3li1">Central hub for all crypto operations</li>
+                              <li data-i18n="standart.el3li2">Customizable payout methods </li>
+                              <li data-i18n="standart.el3li3">Enhanced security options</li>
                             </ul>
                       </div>
                   </div>
@@ -158,10 +166,8 @@
         <div class="container">
             <div class="forget__title">
                 <div class="block-title">
-                    <h2 class="title-h2">
-                        Forget banking cards. <br>
-                        Embrace e-commerce with crypto
-                    </h2>
+                    <h2 class="title-h2" data-i18n="forget.title">
+                        Forget banking cards. <br> Embrace e-commerce with crypto </h2>
                   </div>
             </div>
             <div class="forget__in">
@@ -217,18 +223,14 @@
 
 
 
-    <section class="allcrypto">
+    <section class="allcrypto allcryptoapi">
       <div class="container">
         <div class="allcrypto__in">
           <div class="block-title">
-            <h2 class="title-h2">
-              All the cryptocurrencies you need. <br>
-              And even more
-            </h2>
-            <p class="title-hint">
-              8wallet supports all major cryptocurrencies. New currencies are added regularly, discover them all in the
-              list below.
-            </p>
+            <h2 class="title-h2" data-i18n="allcryptoapi.title">
+              All the cryptocurrencies you need. <br> And even more </h2>
+            <p class="title-hint" data-i18n="allcryptoapi.subtitle">
+              8wallet supports all major cryptocurrencies. New currencies are added regularly, discover them all in the list below. </p>
           </div>
           <div class="allcrypto__line">
             <a href="/" class="allcrypto__item">
@@ -306,7 +308,7 @@
               <span class="title">BTC</span>
               <span class="text">Bitcoin</span>
             </a>
-            <a href="" class="others-crypto">And many others</a>
+            <a href="" class="others-crypto" data-i18n="allcryptoapi.button">And many others</a>
           </div>
         </div>
       </div>
@@ -327,9 +329,7 @@
                         </div>
                         <div class="content">
                             <p class="num">0 %</p>
-                            <p class="text">fee on AML-approved <br>
-                                incoming crypto transactions</p>
-                        </div>
+                            <p class="text" data-i18n="percent.el1title">fee on AML-approved <br> incoming crypto transactions</p> </div>
                 </div>
                 <div class="percent__item">
                     <div class="percent__img">
@@ -344,7 +344,7 @@
                         </div>
                         <div class="content">
                             <p class="num">0.8 %</p>
-                            <p class="text">fee on payouts made to EUR SEPA accounts</p>
+                            <p class="text" data-i18n="percent.el2title">fee on payouts made to EUR SEPA accounts</p>
                         </div>
                 </div>
             </div>
@@ -356,7 +356,7 @@
         <div class="container">
             <div class="step__in">
                 <div class="block-title">
-                    <h2 class="title-h2">
+                    <h2 class="title-h2" data-i18n="step.title">
                         How do I start receiving crypto payments?
                     </h2>
                   </div>
@@ -364,27 +364,27 @@
                       <div class="step__item">
                           <div class="top">
                               <div class="num">01</div>
-                              <h4 class="title">Create an account</h4>
+                              <h4 class="title" data-i18n="step.el1title">Create an account</h4>
                           </div>
-                          <p class="text">Contact our manager for an exclusive offer or simply register an account and begin API integration.</p>
+                          <p class="text" data-i18n="step.el1subtitle">Contact our manager for an exclusive offer or simply register an account and begin API integration.</p>
                       </div>
                       <div class="step__item">
                           <div class="top">
                               <div class="num">02</div>
-                              <h4 class="title">Connect Wallet API</h4>
+                              <h4 class="title" data-i18n="step.el2title">Connect Wallet API</h4>
                           </div>
-                          <p class="text">You can find all necessary info and API keys on the Dashboard. In case of any troubles, our support will be happy to assist you.</p>
+                          <p class="text" data-i18n="step.el2subtitle">You can find all necessary info and API keys on the Dashboard. In case of any troubles, our support will be happy to assist you.</p>
                       </div>
                       <div class="step__item">
                           <div class="top">
                               <div class="num">03</div>
-                              <h4 class="title">Receive Crypto</h4>
+                              <h4 class="title" data-i18n="step.el3title">Receive Crypto</h4>
                           </div>
-                          <p class="text">You’re all set! Any incoming crypto transaction will be reflected in your balances.</p>
+                          <p class="text" data-i18n="step.el3subtitle">You’re all set! Any incoming crypto transaction will be reflected in your balances.</p>
                       </div>
                   </div>
                   <div class="step__btn">
-                    <button class="btn-table blue-btn">
+                    <button class="btn-table blue-btn" data-i18n="step.button">
                         Sign Up
                     </button>
                   </div>
@@ -396,36 +396,34 @@
     <section class="enjoy">
         <div class="container">
             <div class="block-title">
-                <h2 class="title-h2">
+                <h2 class="title-h2" data-i18n="enjoy.title">
                     Enjoying crypto? Spread the word!
                 </h2>
-                <p class="title-hint">
+                <p class="title-hint" data-i18n="enjoy.subtitle">
                     Earn up to 50% of your partners' fees.
                   </p>
               </div>
             <div class="enjoy__in">
                 <div class="enjoy__left">
                     <div class="enjoy__item">
-                        <h4 class="title">01. Get Started</h4>
-                        <p class="text">
-                            Fill out a short contact form on the website with your information. 
-                        </p>
+                        <h4 class="title" data-i18n="enjoy.el1title">01. Get Started</h4>
+                        <p class="text" data-i18n="enjoy.el1subtitle">
+                            Fill out a short contact form on the website with your information. </p>
                     </div>
                     <div class="enjoy__item">
-                        <h4 class="title">02. Get Ready</h4>
-                        <p class="text">
+                        <h4 class="title" data-i18n="enjoy.el2title">02. Get Ready</h4>
+                        <p class="text" data-i18n="enjoy.el2subtitle">
                             Copy the referral link and select necessary promo materials.
                         </p>
                     </div>
                     <div class="enjoy__item">
-                        <h4 class="title">03. Promote & Earn! </h4>
-                        <p class="text">
-                            Promote 8wallet on your resource and get up to 50% of fees from your invited users.
-                        </p>
+                        <h4 class="title" data-i18n="enjoy.el3title">03. Promote & Earn! </h4>
+                        <p class="text" data-i18n="enjoy.el3subtitle">
+                            Promote 8wallet on your resource and get up to 50% of fees from your invited users. </p>
                     </div>
                 </div>
                 <div class="enjoy__right">
-                    <h3 class="title">
+                    <h3 class="title" data-i18n="enjoy.righttitle">
                         Invited Users
                     </h3>
                     <div class="enjoy__box">
@@ -466,7 +464,7 @@
           <div class="partners__in">
             <div class="partners__top">
               <div class="block-title">
-                <h2 class="title-h2">
+                <h2 class="title-h2" data-i18n="partners.title">
                     Our lifetime partners
                 </h2>
               </div>
@@ -481,25 +479,24 @@
               <div class="partners__slider">
                   <div class="partners__item">
                       <div class="img"><img src="" alt=""><span>Company logo</span></div>
-                      <p class="text">
+                      <p class="text" data-i18n="partners.el1text">
                         Diam eget dui quis etiam pellentesque orci scelerisque arcu aliquet. Phasellus mi sem morbi gravida egestas vitae pellentesque.
                       </p>
                   </div>
                   <div class="partners__item">
                       <div class="img"><img src="" alt=""><span>Company logo</span></div>
-                      <p class="text">
+                      <p class="text" data-i18n="partners.el2text">
                         Diam eget dui quis etiam pellentesque orci scelerisque arcu aliquet. Phasellus mi sem morbi gravida egestas vitae pellentesque.
                       </p>
                   </div>
                   <div class="partners__item">
                       <div class="img"><img src="" alt=""><span>Company logo</span></div>
-                      <p class="text">
-                        Diam eget dui quis etiam pellentesque orci scelerisque arcu aliquet. Phasellus mi sem morbi gravida egestas vitae pellentesque.
-                      </p>
+                      <p class="text" data-i18n="partners.el3text">
+                        Diam eget dui quis etiam pellentesque orci scelerisque arcu aliquet. Phasellus mi sem morbi gravida egestas vitae pellentesque. </p>
                   </div>
                   <div class="partners__item">
                       <div class="img"><img src="" alt=""><span>Company logo</span></div>
-                      <p class="text">
+                      <p class="text" data-i18n="partners.el4text">
                         Diam eget dui quis etiam pellentesque orci scelerisque arcu aliquet. Phasellus mi sem morbi gravida egestas vitae pellentesque.
                       </p>
                   </div>
@@ -512,91 +509,95 @@
 
 
       <section class="team">
-        <div class="container">
-          <div class="team__in">
-            <div class="team__top">
-              <div class="block-title">
-                <h2 class="title-h2">
-                  Meet the team
-                </h2>
-                <p class="title-hint">
-                  We are a team of ambitious entrepreneurs, hackers and rockstar marketers building innovative products
-                  together
-                </p>
+      <div class="container">
+        <div class="team__in">
+          <div class="team__top">
+            <div class="block-title">
+              <h2 class="title-h2" data-i18n="team.title">
+                Meet the team
+              </h2>
+              <p class="title-hint" data-i18n="team.subtitle">
+                We are a team of ambitious entrepreneurs, hackers and rockstar marketers building innovative products together
+              </p>
+            </div>
+            <div class="team__top-right">
+              <div class="team__btn">
+                <button class="btn-table buy" data-i18n="team.allteam">All team</button>
               </div>
-              <div class="team__top-right">
-                <div class="team__btn">
-                  <button class="btn-table buy">All team</button>
-                </div>
-                <div class="slider-controls">
-                  <button class="arrow-btn prev-btn prev__team"><img src="img/prev-arrow.svg" alt=""></button>
-                  <button class="arrow-btn next-btn next__team"><img src="img/prev-arrow.svg" alt=""></button>
-                </div>
+              <div class="slider-controls">
+                <button class="arrow-btn prev-btn prev__team"><img src="img/prev-arrow.svg" alt=""></button>
+                <button class="arrow-btn next-btn next__team"><img src="img/prev-arrow.svg" alt=""></button>
               </div>
             </div>
-            <div class="team__box">
-              <div class="team__slider">
-                <div class="team__slider-item">
-                  <div class="img">
-                    <div class="position-mini">CEO</div>
-                    <img src="img/team1.jpg" alt=""></div>
-                  <h4 class="name">
-                    Marvin McKinney
-                  </h4>
-                  <p class="position">
-                    CEO, Сryptocurrency expert
-                  </p>
+          </div>
+          <div class="team__box">
+            <div class="team__slider">
+              <div class="team__slider-item">
+                <div class="img">
+                  <div class="position-mini" data-i18n="teambox.position1">CEO</div>
+                  <img src="img/team1.jpg" alt="">
                 </div>
-                <div class="team__slider-item">
-                  <div class="img">
-                    <div class="position-mini">CEO</div>
-                    <img src="img/team2.jpg" alt=""></div>
-                  <h4 class="name">
-                    Mark Thompson
-                  </h4>
-                  <p class="position">
-                    Сryptocurrency expert
-                  </p>
+                <h4 class="name" data-i18n="teambox.name1">
+                  Marvin McKinney
+                </h4>
+                <p class="position" data-i18n="teambox.fullposition1" >
+                  CEO, Сryptocurrency expert
+                </p>
+              </div>
+              
+              <div class="team__slider-item">
+                <div class="img">
+                  <div class="position-mini" data-i18n="teambox.position2">CEO</div>
+                  <img src="img/team2.jpg" alt="">
                 </div>
-                <div class="team__slider-item">
-                  <div class="img">
-                    <div class="position-mini">CEO</div>
-                    <img src="img/team3.jpg" alt=""></div>
-                  <h4 class="name">
-                    Daniel Frost
-                  </h4>
-                  <p class="position">
-                    Сryptocurrency expert
-                  </p>
+                <h4 class="name" data-i18n="teambox.name2">
+                  Marvin McKinney
+                </h4>
+                <p class="position" data-i18n="teambox.fullposition2" >
+                  CEO, Сryptocurrency expert
+                </p>
+              </div>
+              <div class="team__slider-item">
+                <div class="img">
+                  <div class="position-mini" data-i18n="teambox.position3">CEO</div>
+                  <img src="img/team3.jpg" alt="">
                 </div>
-                <div class="team__slider-item">
-                  <div class="img">
-                    <div class="position-mini">CEO</div>
-                    <img src="img/team4.jpg" alt=""></div>
-                  <h4 class="name">
-                    Bessie Cooper
-                  </h4>
-                  <p class="position">
-                    Сryptocurrency expert
-                  </p>
+                <h4 class="name" data-i18n="teambox.name3">
+                  Marvin McKinney
+                </h4>
+                <p class="position" data-i18n="teambox.fullposition3" >
+                  CEO, Сryptocurrency expert
+                </p>
+              </div>
+              <div class="team__slider-item">
+                <div class="img">
+                  <div class="position-mini" data-i18n="teambox.position4">CEO</div>
+                  <img src="img/team2.jpg" alt="">
                 </div>
-                <div class="team__slider-item">
-                  <div class="img">
-                    <div class="position-mini">CEO</div>
-                    <img src="img/team4.jpg" alt=""></div>
-                  <h4 class="name">
-                    Bessie Cooper
-                  </h4>
-                  <p class="position">
-                    Сryptocurrency expert
-                  </p>
+                <h4 class="name" data-i18n="teambox.name4">
+                  Marvin McKinney
+                </h4>
+                <p class="position" data-i18n="teambox.fullposition4" >
+                  CEO, Сryptocurrency expert
+                </p>
+              </div>
+              <div class="team__slider-item">
+                <div class="img">
+                  <div class="position-mini" data-i18n="teambox.position5">CEO</div>
+                  <img src="img/team1.jpg" alt="">
                 </div>
+                <h4 class="name" data-i18n="teambox.name5">
+                  Marvin McKinney
+                </h4>
+                <p class="position" data-i18n="teambox.fullposition5" >
+                  CEO, Сryptocurrency expert
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
-  
+      </div>
+    </section>
 
 
     <section class="where">
@@ -604,39 +605,39 @@
         <div class="where__in">
           <div class="where__left">
             <div class="block-title">
-              <h2 class="title-h2">
+              <h2 class="title-h2" data-i18n="where.title">
                 Where are we?
               </h2>
             </div>
             <div class="where__tab">
               <div class="where__item active">
-                <a href="" class="map-btn" data-lat="59.442004" data-lng="24.7522612"><svg width="20" height="20"
+                <p class="map-btn" data-lat="59.442004" data-lng="24.7522612"><svg width="20" height="20"
                     viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M10 1.24976C8.1773 1.25192 6.42987 1.97694 5.14103 3.26579C3.85219 4.55463 3.12716 6.30206 3.125 8.12476C3.125 14.0073 9.375 18.4507 9.64111 18.6368C9.74636 18.7103 9.87163 18.7498 10 18.7498C10.1284 18.7498 10.2536 18.7103 10.3589 18.6368C10.625 18.4507 16.875 14.0073 16.875 8.12476C16.8728 6.30206 16.1478 4.55463 14.859 3.26579C13.5701 1.97694 11.8227 1.25192 10 1.24976ZM10.0005 5.62498C10.4949 5.62498 10.9783 5.77161 11.3894 6.04631C11.8005 6.32101 12.1209 6.71146 12.3102 7.16827C12.4994 7.62509 12.5489 8.12776 12.4524 8.61271C12.356 9.09766 12.1179 9.54312 11.7682 9.89275C11.4186 10.2424 10.9731 10.4805 10.4882 10.5769C10.0032 10.6734 9.50056 10.6239 9.04375 10.4347C8.58693 10.2455 8.19649 9.92503 7.92178 9.51391C7.64708 9.10278 7.50046 8.61944 7.50046 8.12498C7.50045 7.79668 7.56511 7.47158 7.69074 7.16826C7.81637 6.86494 8.00052 6.58934 8.23267 6.35719C8.46482 6.12505 8.74042 5.9409 9.04374 5.81526C9.34706 5.68963 9.67215 5.62497 10.0005 5.62498Z"
                       fill="#9B9B9B" />
                   </svg>
-                  Tallin</a>
+                  Tallin</p>
                 <p class="text">Tallinn, Kesklinna linnaosa, Poordi tn 3-75, 10156, Estonia.</p>
               </div>
               <div class="where__item">
-                <a href="" class="map-btn" data-lat="50.4499594" data-lng="30.5230931"><svg width="20" height="20"
+                <p class="map-btn" data-lat="50.4499594" data-lng="30.5230931"><svg width="20" height="20"
                     viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M10 1.24976C8.1773 1.25192 6.42987 1.97694 5.14103 3.26579C3.85219 4.55463 3.12716 6.30206 3.125 8.12476C3.125 14.0073 9.375 18.4507 9.64111 18.6368C9.74636 18.7103 9.87163 18.7498 10 18.7498C10.1284 18.7498 10.2536 18.7103 10.3589 18.6368C10.625 18.4507 16.875 14.0073 16.875 8.12476C16.8728 6.30206 16.1478 4.55463 14.859 3.26579C13.5701 1.97694 11.8227 1.25192 10 1.24976ZM10.0005 5.62498C10.4949 5.62498 10.9783 5.77161 11.3894 6.04631C11.8005 6.32101 12.1209 6.71146 12.3102 7.16827C12.4994 7.62509 12.5489 8.12776 12.4524 8.61271C12.356 9.09766 12.1179 9.54312 11.7682 9.89275C11.4186 10.2424 10.9731 10.4805 10.4882 10.5769C10.0032 10.6734 9.50056 10.6239 9.04375 10.4347C8.58693 10.2455 8.19649 9.92503 7.92178 9.51391C7.64708 9.10278 7.50046 8.61944 7.50046 8.12498C7.50045 7.79668 7.56511 7.47158 7.69074 7.16826C7.81637 6.86494 8.00052 6.58934 8.23267 6.35719C8.46482 6.12505 8.74042 5.9409 9.04374 5.81526C9.34706 5.68963 9.67215 5.62497 10.0005 5.62498Z"
                       fill="#9B9B9B" />
                   </svg>
-                  Kiev</a>
+                  Kiev</p>
                 <p class="text">Kiev, Kesklinna linnaosa, Poordi tn 3-75, 10156, Ukraine.</p>
               </div>
               <div class="where__item">
-                <a href="" class="map-btn" data-lat="25.2044881" data-lng="55.2692889"><svg width="20" height="20"
+                <p class="map-btn" data-lat="25.2044881" data-lng="55.2692889"><svg width="20" height="20"
                     viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M10 1.24976C8.1773 1.25192 6.42987 1.97694 5.14103 3.26579C3.85219 4.55463 3.12716 6.30206 3.125 8.12476C3.125 14.0073 9.375 18.4507 9.64111 18.6368C9.74636 18.7103 9.87163 18.7498 10 18.7498C10.1284 18.7498 10.2536 18.7103 10.3589 18.6368C10.625 18.4507 16.875 14.0073 16.875 8.12476C16.8728 6.30206 16.1478 4.55463 14.859 3.26579C13.5701 1.97694 11.8227 1.25192 10 1.24976ZM10.0005 5.62498C10.4949 5.62498 10.9783 5.77161 11.3894 6.04631C11.8005 6.32101 12.1209 6.71146 12.3102 7.16827C12.4994 7.62509 12.5489 8.12776 12.4524 8.61271C12.356 9.09766 12.1179 9.54312 11.7682 9.89275C11.4186 10.2424 10.9731 10.4805 10.4882 10.5769C10.0032 10.6734 9.50056 10.6239 9.04375 10.4347C8.58693 10.2455 8.19649 9.92503 7.92178 9.51391C7.64708 9.10278 7.50046 8.61944 7.50046 8.12498C7.50045 7.79668 7.56511 7.47158 7.69074 7.16826C7.81637 6.86494 8.00052 6.58934 8.23267 6.35719C8.46482 6.12505 8.74042 5.9409 9.04374 5.81526C9.34706 5.68963 9.67215 5.62497 10.0005 5.62498Z"
                       fill="#9B9B9B" />
                   </svg>
-                  Dubai</a>
+                  Dubai</p>
                 <p class="text">Dubai, Kesklinna linnaosa, Poordi tn 3-75, 10156, UAE.</p>
               </div>
             </div>
@@ -676,8 +677,8 @@
                 </div>
               </div>
               <div class="text">
-                <p class="name">Ralph Edwards</p>
-                <p class="position">Community manager</p>
+                <p class="name" data-i18n="contact.name1">Ralph Edwards</p>
+                <p class="position" data-i18n="contact.position1">Community manager</p>
               </div>
             </div>
             <div class="contact__item">
@@ -704,32 +705,32 @@
                 </div>
               </div>
               <div class="text">
-                <p class="name">Arlene McCoy</p>
-                <p class="position">Community manager</p>
+                <p class="name" data-i18n="contact.name2">Arlene McCoy</p>
+                <p class="position" data-i18n="contact.position2">Community manager</p>
               </div>
             </div>
 
           </div>
           <div class="contact__right">
             <div class="block-title">
-              <h2 class="title-h2">
+              <h2 class="title-h2" data-i18n="contact.title">
                 Contact us
               </h2>
-              <p class="title-hint">
+              <p class="title-hint" data-i18n="contact.subtitle">
                 Use this form to reach out to us
               </p>
             </div>
             <form action="" class="contact__form">
               <div class="input-field">
-                <label for="">Enter your email</label>
+                <label for="" data-i18n="contact.email">Enter your email</label>
                 <input class="input-area" type="email" placeholder="Enter your email">
               </div>
               <div class="input-field">
-                <label for="">Message</label>
+                <label for="" data-i18n="contact.message">Message</label>
                 <textarea class="input-area" name="" id="" cols="30" rows="4"
                   placeholder="Enter your message here"></textarea>
               </div>
-              <button class="btn-table buy">Send message</button>
+              <button class="btn-table buy" data-i18n="contact.send">Send message</button>
             </form>
           </div>
         </div>
@@ -741,7 +742,7 @@
       <div class="container">
         <div class="faq__in">
           <div class="block-title">
-            <h2 class="title-h2 " itemprop="name">
+            <h2 class="title-h2 " itemprop="name" data-i18n="faq.title">
               Popular Questions
             </h2>
           </div>
@@ -758,7 +759,7 @@
                       fill="#3139CE" />
                   </svg>
                   <div itemscope="" itemprop="mainEntity"  itemtype="https://schema.org/Question">
-                    <div itemprop="name">Liquidity</div>
+                    <div itemprop="name" data-i18n="faq.ques1title">Liquidity</div>
                   </div>
                 </h2>
                 <div class="faqBox_header_openIcon"></div>
@@ -766,18 +767,8 @@
               <div class="faqBox_body">
                 <div class="descr" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div itemprop="text">
-                    <p>
-                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount
-                      of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared.
-                      But
-                      despite the significant figures for market cap, the actual impact on.</p>
-                  </div>
+                    <p data-i18n="faq.ans1title">
+                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on.</p> </div>
                 </div>
 
               </div>
@@ -794,7 +785,7 @@
                       fill="#3139CE" />
                   </svg>
                   <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <div itemprop="name"> Status migration</div>
+                    <div itemprop="name" data-i18n="faq.ques2title"> Status migration</div>
                   </div>
 
                 </h2>
@@ -803,18 +794,8 @@
               <div class="faqBox_body">
                 <div class="descr" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div itemprop="text">
-                    <p>
-                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount
-                      of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared.
-                      But
-                      despite the significant figures for market cap, the actual impact on.</p>
-                  </div>
+                    <p data-i18n="faq.ans2title">
+                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on.</p> </div>
                 </div>
 
               </div>
@@ -841,7 +822,7 @@
                       fill="white" stroke="#3139CE" stroke-width="2" />
                   </svg>
                   <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <div itemprop="name"> Team</div>
+                    <div itemprop="name" data-i18n="faq.ques3title"> Team</div>
                   </div>
                 </h2>
                 <div class="faqBox_header_openIcon"></div>
@@ -849,18 +830,8 @@
               <div class="faqBox_body">
                 <div class="descr" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div itemprop="text">
-                    <p>
-                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount
-                      of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared.
-                      But
-                      despite the significant figures for market cap, the actual impact on.</p>
-                  </div>
+                    <p data-i18n="faq.ans3title">
+                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on.</p> </div>
                 </div>
 
               </div>
@@ -893,7 +864,7 @@
                     <circle cx="38.5" cy="34.5714" r="2.5" fill="white" stroke="#3139CE" stroke-width="2" />
                   </svg>
                   <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <div itemprop="name">Roadmap</div>
+                    <div itemprop="name" data-i18n="faq.ques4title">Roadmap</div>
                   </div>
                 </h2>
                 <div class="faqBox_header_openIcon"></div>
@@ -901,18 +872,8 @@
               <div class="faqBox_body">
                 <div class="descr" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div itemprop="text">
-                    <p>
-                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount
-                      of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared.
-                      But
-                      despite the significant figures for market cap, the actual impact on.</p>
-                  </div>
+                    <p data-i18n="faq.ans4title">
+                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on.</p> </div>
                 </div>
 
               </div>
@@ -934,7 +895,7 @@
                       fill="white" stroke="#3139CE" stroke-width="2" stroke-linejoin="round" />
                   </svg>
                   <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <div itemprop="name">Legal</div>
+                    <div itemprop="name" data-i18n="faq.ques5title">Legal</div>
                   </div>
                 </h2>
                 <div class="faqBox_header_openIcon"></div>
@@ -942,18 +903,8 @@
               <div class="faqBox_body">
                 <div class="descr" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div itemprop="text">
-                    <p>
-                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount
-                      of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared.
-                      But
-                      despite the significant figures for market cap, the actual impact on.</p>
-                  </div>
+                    <p data-i18n="faq.ans5title">
+                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on.</p> </div>
                 </div>
 
               </div>
@@ -973,7 +924,7 @@
                       fill="#3139CE" />
                   </svg>
                   <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <div itemprop="name">Security</div>
+                    <div itemprop="name" data-i18n="faq.ques6title">Security</div>
                   </div>
                 </h2>
                 <div class="faqBox_header_openIcon"></div>
@@ -981,18 +932,8 @@
               <div class="faqBox_body">
                 <div class="descr" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div itemprop="text">
-                    <p>
-                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
-                      terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
-                      despite the significant figures for market cap, the actual impact on the economy has not yet been
-                      felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount
-                      of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared.
-                      But
-                      despite the significant figures for market cap, the actual impact on.</p>
-                  </div>
+                    <p data-i18n="faq.ans6title">
+                      Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on.</p> </div>
                 </div>
 
               </div>
@@ -1009,13 +950,13 @@
         <div class="explore__in">
           <div class="explore__left">
             <div class="block-title">
-              <h2 class="title-h2 white">
+              <h2 class="title-h2 white" data-i18n="explore.title">
                 Explore the brave new world of digital finance!
               </h2>
-              <p class="title-hint gray">
+              <p class="title-hint gray" data-i18n="explore.subtitle">
                 Download 8wallet app or set up an account right now!
               </p>
-              <button class="btn-table deposit">Get Started</button>
+              <button class="btn-table deposit" data-i18n="explore.getstarted">Get Started</button>
             </div>
           </div>
         </div>
@@ -1034,93 +975,100 @@
             </a>
           </div>
           <div class="footer__lang">
-            <h4>Language</h4>
+            <h4  data-i18n="footer.lang">Language</h4>
             <div class="language-switcher">
-              <div class="language-switcher">
-                <div class="boxLang">
-                  <ul class="langUlController">
-                     <li class="liLang activLang">
-                     <a >
-                       <div class="iconLang">
-                      <img src="img/enlang.png" alt="">
-                    </div>
-                    <p class="titleLang">English</p>
-                     </a></li>
-                     <li class="liLang">
-                       <a>
-                       <div class="iconLang">
-                    <img src="img/enlang.png" alt="">
-                  </div>
-                  <p class="titleLang">Русский</p>
-                     </a></li>
-                  </ul>
+              <div class="boxLang">
+                <ul class="langUlController">
+                  <li class="liLang activLang" data-value="en">
+                    <a>
+                      <div class="iconLang">
+                        <img src="img/enlang.png" alt="">
+                      </div>
+                      <p class="titleLang">English</p>
+                    </a></li>
+                  <li class="liLang" data-value="ru">
+                    <a>
+                      <div class="iconLang">
+                        <img src="img/enlang.png" alt="">
+                      </div>
+                      <p class="titleLang">Русский</p>
+                    </a></li>
+                </ul>
               </div>
-            </div>
             </div>
           </div>
         </div>
         <div class="footer__nav">
-          <h4 class="title-mini">Products</h4>
+          <h4 class="title-mini" data-i18n="footerProdyctNav.title">Products</h4>
           <nav>
             <ul>
-              <li><a href="">Wallet</a></li>
-              <li><a href="">Buy Crypto</a></li>
-              <li><a href="">Crypto Widget</a></li>
-              <li><a href="">API</a></li>
-              <li><a href="">Affiliate Program</a></li>
+              <li><a href=""  data-i18n="footerProdyctNav.el1">Wallet</a></li>
+              <li><a href=""  data-i18n="footerProdyctNav.el2">Buy Crypto</a></li>
+              <li><a href=""  data-i18n="footerProdyctNav.el3">Crypto Widget</a></li>
+              <li><a href=""  data-i18n="footerProdyctNav.el4">API</a></li>
+              <li><a href=""  data-i18n="footerProdyctNav.el5">Affiliate Program</a></li>
             </ul>
           </nav>
         </div>
         <div class="footer__nav">
-          <h4 class="title-mini">Policy</h4>
+          <h4 class="title-mini" data-i18n="footerPolicyNav.title">Policy</h4>
           <nav>
             <ul>
-              <li><a href="">Terms of Service</a></li>
-              <li><a href="">Privacy Policy</a></li>
-              <li><a href="">AML/KYC Policy</a></li>
-              <li><a href="">Refund Policy</a></li>
-              <li><a href="">Cookie Policy</a></li>
+              <li><a href="" data-i18n="footerPolicyNav.el1">Terms of Service</a></li>
+              <li><a href="" data-i18n="footerPolicyNav.el2">Privacy Policy</a></li>
+              <li><a href="" data-i18n="footerPolicyNav.el3">AML/KYC Policy</a></li>
+              <li><a href="" data-i18n="footerPolicyNav.el4">Refund Policy</a></li>
+              <li><a href="" data-i18n="footerPolicyNav.el5">Cookie Policy</a></li>
             </ul>
           </nav>
         </div>
         <div class="footer__nav">
-          <h4 class="title-mini">Information Center</h4>
+          <h4 class="title-mini" data-i18n="footerNav.title">Information Center</h4>
           <nav>
             <ul>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Crypto Academy</a></li>
-              <li><a href="">FAQ</a></li>
+              <li><a href="" data-i18n="footerNav.blog">Blog</a></li>
+              <li><a href="" data-i18n="footerNav.academy">Crypto Academy</a></li>
+              <li><a href="" data-i18n="footerNav.faq">FAQ</a></li>
             </ul>
           </nav>
         </div>
         <div class="footer__nav">
-          <h4 class="title-mini">24/7 Support</h4>
+          <h4 class="title-mini" data-i18n="footerNav.suport">24/7 Support</h4>
           <nav>
             <ul>
-              <li><a href="">Telegram</a></li>
-              <li><a href="">Zendesk</a></li>
-              <li><a href="">Email</a></li>
+              <li><a href="" data-i18n="footerNav.telegram">Telegram</a></li>
+              <li><a href="" data-i18n="footerNav.zen">Zendesk</a></li>
+              <li><a href="" data-i18n="footerNav.emain">Email</a></li>
             </ul>
           </nav>
         </div>
         <div class="footer__nav">
-          <h4 class="title-mini">Follow Us</h4>
+          <h4 class="title-mini" data-i18n="footerNav.folowus">Follow Us</h4>
           <nav class="social__footer-nav">
             <ul>
-              <li><a href=""><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="38" height="38" rx="19" fill="#515165"/>
-                <path d="M23.0356 20L23.48 17.1044H20.7015V15.2253C20.7015 14.4331 21.0897 13.6609 22.334 13.6609H23.5971V11.1956C23.5971 11.1956 22.4509 11 21.355 11C19.0669 11 17.5712 12.3869 17.5712 14.8975V17.1044H15.0278V20H17.5712V27H20.7015V20H23.0356Z" fill="#F4F4F9"/>
-                </svg>
+              <li><a href=""><svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="38" height="38" rx="19" fill="#515165" />
+                    <path
+                      d="M23.0356 20L23.48 17.1044H20.7015V15.2253C20.7015 14.4331 21.0897 13.6609 22.334 13.6609H23.5971V11.1956C23.5971 11.1956 22.4509 11 21.355 11C19.0669 11 17.5712 12.3869 17.5712 14.8975V17.1044H15.0278V20H17.5712V27H20.7015V20H23.0356Z"
+                      fill="#F4F4F9" />
+                  </svg>
                 </a></li>
-              <li><a href=""><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="38" height="38" rx="19" fill="#515165"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0017 14.8978C16.7316 14.8978 14.9005 16.7293 14.9005 19C14.9005 21.2707 16.7316 23.1022 19.0017 23.1022C21.2719 23.1022 23.103 21.2707 23.103 19C23.103 16.7293 21.2719 14.8978 19.0017 14.8978ZM19.0017 21.667C17.5347 21.667 16.3354 20.4709 16.3354 19C16.3354 17.5291 17.5311 16.333 19.0017 16.333C20.4723 16.333 21.6681 17.5291 21.6681 19C21.6681 20.4709 20.4687 21.667 19.0017 21.667V21.667ZM24.2273 14.73C24.2273 15.262 23.799 15.6868 23.2707 15.6868C22.7389 15.6868 22.3141 15.2584 22.3141 14.73C22.3141 14.2016 22.7425 13.7732 23.2707 13.7732C23.799 13.7732 24.2273 14.2016 24.2273 14.73ZM26.9437 15.7011C26.883 14.4194 26.5903 13.2841 25.6515 12.3487C24.7163 11.4133 23.5813 11.1205 22.2999 11.0562C20.9792 10.9813 17.0207 10.9813 15.7 11.0562C14.4222 11.1169 13.2871 11.4097 12.3483 12.3451C11.4096 13.2805 11.1205 14.4158 11.0562 15.6975C10.9813 17.0185 10.9813 20.9779 11.0562 22.2989C11.1169 23.5806 11.4096 24.7159 12.3483 25.6513C13.2871 26.5867 14.4186 26.8795 15.7 26.9438C17.0207 27.0187 20.9792 27.0187 22.2999 26.9438C23.5813 26.8831 24.7163 26.5903 25.6515 25.6513C26.5867 24.7159 26.8794 23.5806 26.9437 22.2989C27.0186 20.9779 27.0186 17.0221 26.9437 15.7011ZM25.2375 23.7163C24.9591 24.416 24.4201 24.9551 23.7169 25.2372C22.6639 25.6549 20.1654 25.5585 19.0017 25.5585C17.8381 25.5585 15.336 25.6513 14.2865 25.2372C13.5869 24.9587 13.048 24.4196 12.766 23.7163C12.3484 22.6631 12.4447 20.1639 12.4447 19C12.4447 17.8361 12.3519 15.3334 12.766 14.2837C13.0444 13.584 13.5834 13.0449 14.2865 12.7628C15.3395 12.3451 17.8381 12.4415 19.0017 12.4415C20.1654 12.4415 22.6675 12.3487 23.7169 12.7628C24.4165 13.0413 24.9555 13.5804 25.2375 14.2837C25.6551 15.3369 25.5587 17.8361 25.5587 19C25.5587 20.1639 25.6551 22.6666 25.2375 23.7163Z" fill="#F4F4F9"/>
-                </svg>
+              <li><a href=""><svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="38" height="38" rx="19" fill="#515165" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M19.0017 14.8978C16.7316 14.8978 14.9005 16.7293 14.9005 19C14.9005 21.2707 16.7316 23.1022 19.0017 23.1022C21.2719 23.1022 23.103 21.2707 23.103 19C23.103 16.7293 21.2719 14.8978 19.0017 14.8978ZM19.0017 21.667C17.5347 21.667 16.3354 20.4709 16.3354 19C16.3354 17.5291 17.5311 16.333 19.0017 16.333C20.4723 16.333 21.6681 17.5291 21.6681 19C21.6681 20.4709 20.4687 21.667 19.0017 21.667V21.667ZM24.2273 14.73C24.2273 15.262 23.799 15.6868 23.2707 15.6868C22.7389 15.6868 22.3141 15.2584 22.3141 14.73C22.3141 14.2016 22.7425 13.7732 23.2707 13.7732C23.799 13.7732 24.2273 14.2016 24.2273 14.73ZM26.9437 15.7011C26.883 14.4194 26.5903 13.2841 25.6515 12.3487C24.7163 11.4133 23.5813 11.1205 22.2999 11.0562C20.9792 10.9813 17.0207 10.9813 15.7 11.0562C14.4222 11.1169 13.2871 11.4097 12.3483 12.3451C11.4096 13.2805 11.1205 14.4158 11.0562 15.6975C10.9813 17.0185 10.9813 20.9779 11.0562 22.2989C11.1169 23.5806 11.4096 24.7159 12.3483 25.6513C13.2871 26.5867 14.4186 26.8795 15.7 26.9438C17.0207 27.0187 20.9792 27.0187 22.2999 26.9438C23.5813 26.8831 24.7163 26.5903 25.6515 25.6513C26.5867 24.7159 26.8794 23.5806 26.9437 22.2989C27.0186 20.9779 27.0186 17.0221 26.9437 15.7011ZM25.2375 23.7163C24.9591 24.416 24.4201 24.9551 23.7169 25.2372C22.6639 25.6549 20.1654 25.5585 19.0017 25.5585C17.8381 25.5585 15.336 25.6513 14.2865 25.2372C13.5869 24.9587 13.048 24.4196 12.766 23.7163C12.3484 22.6631 12.4447 20.1639 12.4447 19C12.4447 17.8361 12.3519 15.3334 12.766 14.2837C13.0444 13.584 13.5834 13.0449 14.2865 12.7628C15.3395 12.3451 17.8381 12.4415 19.0017 12.4415C20.1654 12.4415 22.6675 12.3487 23.7169 12.7628C24.4165 13.0413 24.9555 13.5804 25.2375 14.2837C25.6551 15.3369 25.5587 17.8361 25.5587 19C25.5587 20.1639 25.6551 22.6666 25.2375 23.7163Z"
+                      fill="#F4F4F9" />
+                  </svg>
                 </a></li>
-              <li><a href=""><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="38" height="38" rx="19" fill="#515165"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0017 14.8978C16.7316 14.8978 14.9005 16.7293 14.9005 19C14.9005 21.2707 16.7316 23.1022 19.0017 23.1022C21.2719 23.1022 23.103 21.2707 23.103 19C23.103 16.7293 21.2719 14.8978 19.0017 14.8978ZM19.0017 21.667C17.5347 21.667 16.3354 20.4709 16.3354 19C16.3354 17.5291 17.5311 16.333 19.0017 16.333C20.4723 16.333 21.6681 17.5291 21.6681 19C21.6681 20.4709 20.4687 21.667 19.0017 21.667V21.667ZM24.2273 14.73C24.2273 15.262 23.799 15.6868 23.2707 15.6868C22.7389 15.6868 22.3141 15.2584 22.3141 14.73C22.3141 14.2016 22.7425 13.7732 23.2707 13.7732C23.799 13.7732 24.2273 14.2016 24.2273 14.73ZM26.9437 15.7011C26.883 14.4194 26.5903 13.2841 25.6515 12.3487C24.7163 11.4133 23.5813 11.1205 22.2999 11.0562C20.9792 10.9813 17.0207 10.9813 15.7 11.0562C14.4222 11.1169 13.2871 11.4097 12.3483 12.3451C11.4096 13.2805 11.1205 14.4158 11.0562 15.6975C10.9813 17.0185 10.9813 20.9779 11.0562 22.2989C11.1169 23.5806 11.4096 24.7159 12.3483 25.6513C13.2871 26.5867 14.4186 26.8795 15.7 26.9438C17.0207 27.0187 20.9792 27.0187 22.2999 26.9438C23.5813 26.8831 24.7163 26.5903 25.6515 25.6513C26.5867 24.7159 26.8794 23.5806 26.9437 22.2989C27.0186 20.9779 27.0186 17.0221 26.9437 15.7011ZM25.2375 23.7163C24.9591 24.416 24.4201 24.9551 23.7169 25.2372C22.6639 25.6549 20.1654 25.5585 19.0017 25.5585C17.8381 25.5585 15.336 25.6513 14.2865 25.2372C13.5869 24.9587 13.048 24.4196 12.766 23.7163C12.3484 22.6631 12.4447 20.1639 12.4447 19C12.4447 17.8361 12.3519 15.3334 12.766 14.2837C13.0444 13.584 13.5834 13.0449 14.2865 12.7628C15.3395 12.3451 17.8381 12.4415 19.0017 12.4415C20.1654 12.4415 22.6675 12.3487 23.7169 12.7628C24.4165 13.0413 24.9555 13.5804 25.2375 14.2837C25.6551 15.3369 25.5587 17.8361 25.5587 19C25.5587 20.1639 25.6551 22.6666 25.2375 23.7163Z" fill="#F4F4F9"/>
-                </svg>
+              <li><a href=""><svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="38" height="38" rx="19" fill="#515165" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M19.0017 14.8978C16.7316 14.8978 14.9005 16.7293 14.9005 19C14.9005 21.2707 16.7316 23.1022 19.0017 23.1022C21.2719 23.1022 23.103 21.2707 23.103 19C23.103 16.7293 21.2719 14.8978 19.0017 14.8978ZM19.0017 21.667C17.5347 21.667 16.3354 20.4709 16.3354 19C16.3354 17.5291 17.5311 16.333 19.0017 16.333C20.4723 16.333 21.6681 17.5291 21.6681 19C21.6681 20.4709 20.4687 21.667 19.0017 21.667V21.667ZM24.2273 14.73C24.2273 15.262 23.799 15.6868 23.2707 15.6868C22.7389 15.6868 22.3141 15.2584 22.3141 14.73C22.3141 14.2016 22.7425 13.7732 23.2707 13.7732C23.799 13.7732 24.2273 14.2016 24.2273 14.73ZM26.9437 15.7011C26.883 14.4194 26.5903 13.2841 25.6515 12.3487C24.7163 11.4133 23.5813 11.1205 22.2999 11.0562C20.9792 10.9813 17.0207 10.9813 15.7 11.0562C14.4222 11.1169 13.2871 11.4097 12.3483 12.3451C11.4096 13.2805 11.1205 14.4158 11.0562 15.6975C10.9813 17.0185 10.9813 20.9779 11.0562 22.2989C11.1169 23.5806 11.4096 24.7159 12.3483 25.6513C13.2871 26.5867 14.4186 26.8795 15.7 26.9438C17.0207 27.0187 20.9792 27.0187 22.2999 26.9438C23.5813 26.8831 24.7163 26.5903 25.6515 25.6513C26.5867 24.7159 26.8794 23.5806 26.9437 22.2989C27.0186 20.9779 27.0186 17.0221 26.9437 15.7011ZM25.2375 23.7163C24.9591 24.416 24.4201 24.9551 23.7169 25.2372C22.6639 25.6549 20.1654 25.5585 19.0017 25.5585C17.8381 25.5585 15.336 25.6513 14.2865 25.2372C13.5869 24.9587 13.048 24.4196 12.766 23.7163C12.3484 22.6631 12.4447 20.1639 12.4447 19C12.4447 17.8361 12.3519 15.3334 12.766 14.2837C13.0444 13.584 13.5834 13.0449 14.2865 12.7628C15.3395 12.3451 17.8381 12.4415 19.0017 12.4415C20.1654 12.4415 22.6675 12.3487 23.7169 12.7628C24.4165 13.0413 24.9555 13.5804 25.2375 14.2837C25.6551 15.3369 25.5587 17.8361 25.5587 19C25.5587 20.1639 25.6551 22.6666 25.2375 23.7163Z"
+                      fill="#F4F4F9" />
+                  </svg>
                 </a></li>
             </ul>
           </nav>
@@ -1130,14 +1078,10 @@
     <div class="footer__bottom">
       <div class="container-big">
         <div class="footer__bottom-in">
-          <div class="footer__copy">
-            Our Site, 8wallet.com, is owned and operated by <em>Eight Holding OÜ</em>, a limited company registered in Estonia
-            under registry code <em>14777241</em> licensed by Politsei- ja Piirivalveamet. License - <em>FVT000000</em>. Providing
-            services of exchanging a virtual currency against a fiat currency. Providing a virtual currency wallet
-            service. Registered address is Harju maakond, Tallinn, Põhja-Tallinna linnaosa, Tööstuse tn 47a-28, 10416
-          </div>
+          <div class="footer__copy" data-i18n="footerBottom.copy">
+            Our Site, 8wallet.com, is owned and operated by <em>Eight Holding OÜ</em>, a limited company registered in Estonia under registry code <em>14777241</em> licensed by Politsei- ja Piirivalveamet. License - <em>FVT000000</em>. Providing services of exchanging a virtual currency against a fiat currency. Providing a virtual currency wallet service. Registered address is Harju maakond, Tallinn, Põhja-Tallinna linnaosa, Tööstuse tn 47a-28, 10416 </div>
           <div class="footer__card">
-            <h5 class="title">
+            <h5 class="title" data-i18n="footerBottom.weAccept">
               We Accept:
             </h5>
             <div class="footer__card-line">
@@ -1158,6 +1102,39 @@
 
 
   <script src="js/scripts.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/20.4.0/i18next.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/combine/npm/chart.js@3.3.2,npm/i18next-http-backend@1.3.0/i18nextHttpBackend.min.js"></script>
+
+  <script>
+     $(document).ready(function(){
+      i18next
+      .use(i18nextHttpBackend)
+      .init({
+        whitelist: ['en', 'ru'],
+        fallbackLng: 'en',
+        debug:true,
+        ns:[
+        'main',
+        ],
+        defaultNS:'main'
+      }, () =>{
+        jqueryI18next.init(i18next, $);
+        $(document.body).localize();
+
+        $('.liLang').on('click',function(){
+          let langSelect = $(this).attr('data-value');
+          if(langSelect == 'ru'){
+             i18next.changeLanguage('ru', ()  => $(document.body).localize())
+          }
+          if(langSelect == 'en'){
+             i18next.changeLanguage('en', ()  => $(document.body).localize())
+          }
+        })
+  
+      });
+    });
+  </script>
 
   <script>
     var marker;
